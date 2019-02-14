@@ -35,14 +35,7 @@ function addProjectDetails(e) {
 function addProject(result) {
   console.log("Result: " + result['title']);
   var divToChange = document.getElementById('changeMe' + result['id']);
-  
-
-  var projectHTML = '<a href="#" class="thumbnail">' +
-    '<img src="' + result['image'] + '" class="img">' +
-    '<p>' + result['title'] + '</p>' +
-    '<p><small>' + result['date'] +
-    '</small></p></a>'; 
-
+ 
   var projectHTML = '<p>' + result['title'] + '</p>' +
 		'<p>' + result['date'] + '</p>' +
 		'<img src="' + result['image'] + '" class="detailsImage">' +
